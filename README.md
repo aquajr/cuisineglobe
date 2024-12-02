@@ -1,4 +1,4 @@
-# Chat application
+# Cuisines Website
 
 - This is a chat aplication you can use to chat with others
 - Made using VS code
