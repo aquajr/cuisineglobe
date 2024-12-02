@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1 style="padding-left: 400px; font-weight: bolder;">RECIPE 2</h1>
+         <div class="container">
+             <div class="image-container">
+               <img 
+                src="{{ url_for('static', filename='images/pngegg.png') }}" 
+                alt="img"
+                style="width: 350px; height: 350px;">   
+             </div>
+        <div class="recipe-section">
+            <h1>Chicken Biryani Recipe</h1>
+            <h2>Ingredients:</h2>
+            <ul>
+                <li>2 cups basmati rice</li>
+                <li>500 grams chicken (cut into pieces)</li>
+                <li>2 onions (thinly sliced)</li>
+                <li>2 tomatoes (chopped)</li>
+                <li>1 cup yogurt</li>
+                <li>2 tablespoons ginger-garlic paste</li>
+                <li>2 green chilies (slit)</li>
+                <li>1 teaspoon turmeric powder</li>
+                <li>1 teaspoon red chili powder</li>
+                <li>1 teaspoon garam masala</li>
+                <li>Salt to taste</li>
+                <li>Fresh coriander and mint leaves (chopped)</li>
+                <li>4 tablespoons oil or ghee</li>
+                <li>Fried onions for garnish</li>
+            </ul>
+            <h2>Instructions:</h2>
+            <ol>
+                <li>Rinse 2 cups of basmati rice and soak for 30 minutes. Drain.</li>
+                <li>Boil the rice in salted water until 70% cooked. Drain and set aside.</li>
+                <li>Mix 500 grams of chicken with 1 cup yogurt, 1 tablespoon ginger-garlic paste, 1 teaspoon turmeric powder, 1 teaspoon red chili powder, and salt. Let it sit for at least 30 minutes.</li>
+                <li>Heat 4 tablespoons oil or ghee in a pan. Add the sliced onions and cook until golden brown.</li>
+                <li>Add 1 tablespoon ginger-garlic paste and cook for 2 minutes.</li>
+                <li>Add the chopped tomatoes and cook until they soften.</li>
+                <li>Add the marinated chicken and cook until fully done.</li>
+                <li>Add 2 slit green chilies, 1 teaspoon garam masala, and the chopped coriander and mint leaves. Mix well.</li>
+                <li>In a pot, spread a layer of the partially cooked rice. Add a layer of the chicken mixture. Repeat the layers, finishing with a layer of rice on top.</li>
+                <li>Cover the pot tightly and cook on low flame for 20-25 minutes.</li>
+                <li>Garnish with fried onions. Serve hot with raita or salad.</li>
+            </ol>
+        </div>
+    </div>
+
+         </div>
+
+
+{% endblock %}

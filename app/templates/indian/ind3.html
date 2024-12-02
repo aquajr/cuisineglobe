@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1 style="padding-left: 400px; font-weight: bolder;">RECIPE 3</h1>
+         <div class="container">
+             <div class="image-container">
+               <img 
+                src="{{ url_for('static', filename='images/pngegg (1).png') }}" 
+                alt="img"
+                style="width: 350px; height: 350px;">   
+             </div>
+                     <div class="details-section">
+                         <h1>Tandoori Chicken Recipe</h1>
+                         <h2>Ingredients:</h2>
+                         <ul>
+                             <li>1 whole chicken, cut into pieces</li>
+                             <li>1 cup plain yogurt</li>
+                             <li>2 tablespoons lemon juice</li>
+                             <li>2 tablespoons vegetable oil</li>
+                             <li>1 tablespoon minced garlic</li>
+                             <li>1 tablespoon minced ginger</li>
+                             <li>2 teaspoons ground cumin</li>
+                             <li>1 teaspoon turmeric</li>
+                             <li>2 teaspoons paprika</li>
+                             <li>1 teaspoon garam masala</li>
+                             <li>1 teaspoon chili powder (adjust to taste)</li>
+                             <li>Salt to taste</li>
+                             <li>Fresh cilantro for garnish</li>
+                         </ul>
+                         <h2>Instructions:</h2>
+                         <ol>
+                             <li>Mix yogurt, lemon juice, oil, garlic, ginger, cumin, turmeric, paprika, garam masala, chili powder, and salt to make a marinade.</li>
+                             <li>Marinate the chicken in the mixture for at least 4 hours.</li>
+                             <li>Preheat oven to 400°F (200°C).</li>
+                             <li>Bake the chicken for 25-30 minutes until cooked and slightly charred.</li>
+                             <li>Garnish with fresh cilantro and serve.</li>
+                         </ol>
+                     </div>
+                 </div>
+
+             
+         </div>
+
+{% endblock %}

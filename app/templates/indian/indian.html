@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1 style="padding-left: 400px; font-weight: bolder;">Indian Cuisine</h1>
+<div class="row text-center mt-4">
+    <div class="col-md-4">
+        <a class="navbar-brand mx-auto" href=" {{ url_for('ind1') }} " style="font-weight: bolder; color: #FF9900;">
+            <img 
+                src="{{ url_for('static', filename='images/butter.png') }}" 
+                alt="img" 
+                style="width: 150px; height: 150px;"> 
+        
+        </a>
+        <h6>Butter Chicken</h3>
+
+    </div>
+    <div class="col-md-4">
+        <a class="navbar-brand mx-auto" href=" {{ url_for('ind2') }} " style="font-weight: bolder; color: #FF9900;">
+            <img 
+                src="{{ url_for('static', filename='images/pngegg.png') }}" 
+                alt="img" 
+                style="width: 150px; height: 150px;"> 
+        
+        </a>
+        <h6>Chicken Biryani</h3>
+
+    </div>
+    <div class="col-md-4">
+        <a class="navbar-brand mx-auto" href=" {{ url_for('ind3') }} " style="font-weight: bolder; color: #FF9900;">
+            <img 
+                src="{{ url_for('static', filename='images/pngegg (1).png') }}" 
+                alt="img" 
+                style="width: 150px; height: 150px;"> 
+        
+        </a>
+        <h6>Tandoori Chicken</h3>
+
+    </div>
+
+</div>
+    
+
+{% endblock %}

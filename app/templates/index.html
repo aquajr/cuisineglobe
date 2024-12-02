@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <!-- Start: welcome message -->
+    <div class="row text-center mt-4 mb-4">
+        <div class="col-md-12">
+            <h1>Hello {{ current_user.username }}, say something:</h1>            
+        </div>
+    </div>
+    <!-- End: welcome message -->
+
+    <!-- Start: form -->
+    <div class="row mb-4">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <form role="form" action="" method="post" novalidate>
+                {{ form.hidden_tag() }}
+                <div class="row">
+
+                    <div class="col-lg-12">
+                        <div class="form-group position-relative mb-4">
+                            {{ form.body.label }} <span class="text-danger">*</span> <br>
+                            {{ form.body(class_='form-control') }}
+                            {% for error in form.body.errors %}
+                                <span style="color: red;">{{error}}</span>
+                            {% endfor %}
+                        </div>
+                    </div>
+
+                    <div class="col-lg-12 mb-4">
+                        {{ form.submit(class_='custom-orange-button') }}
+                    </div>
+                </div>                                   
+            </form>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+    <!-- End: form -->
+
+    <hr class="horizontal gray-light my-4">
+
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <!-- Start: posts -->
+            {% for post in posts %}
+                {% include '_post.html' %}
+            {% endfor %}
+            <!-- End: posts -->
+
+            <!-- Start: pagination -->
+            {% include '_pagination.html' %}
+            <!-- End: pagination -->
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+{% endblock %}

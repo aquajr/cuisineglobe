@@ -1,0 +1,44 @@
+.custom-orange-button {
+    background-color: #ff9900;
+    border-color: #ff9900;
+    border-radius: 5px;
+}
+.custom-button {
+    background-color: #ff9900;
+    border-color: #ff9900;
+    border-radius: 5px;
+    font-size: 20px;
+    color: white;
+    font-weight: bolder;
+
+}
+.text {
+    color: #ff9900;
+}
+
+.alert {
+    color: #ff9900;
+}
+
+.pic {
+    background-image: url('/static/images/chop.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5px;
+    margin: 0px auto;
+    height: 700px;
+}
+.my-footer {
+    background-color: #FFB648;
+}
+.container { display: flex; flex-direction: row; align-items: flex-start;}
+.image-container { margin-right: 20px; } 
+.recipe-container { max-width: 600px; }
+
+.layout { display: flex; flex-direction: row; align-items: flex-start; } 
+.image-section { margin-right: 20px; } 
+.recipe-section { max-width: 600px; }
+
+.wrapper { display: flex; flex-direction: row; align-items: flex-start; } 
+.photo-section { margin-right: 20px; } 
+.details-section { max-width: 600px; }

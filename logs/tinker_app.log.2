@@ -1,0 +1,66 @@
+2024-11-09 11:02:53,243 ERROR: Exception on /indian [GET] [in /mnt/c/Users/Atuech Obosi/OneDrive/Desktop/software-development(Ayanda)/Chapter-13-Pagination-workthrough-/ball/lib/python3.8/site-packages/flask/app.py:838]
+Traceback (most recent call last):
+  File "/mnt/c/Users/Atuech Obosi/OneDrive/Desktop/software-development(Ayanda)/Chapter-13-Pagination-workthrough-/ball/lib/python3.8/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/mnt/c/Users/Atuech Obosi/OneDrive/Desktop/software-development(Ayanda)/Chapter-13-Pagination-workthrough-/ball/lib/python3.8/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/mnt/c/Users/Atuech Obosi/OneDrive/Desktop/software-development(Ayanda)/Chapter-13-Pagination-workthrough-/ball/lib/python3.8/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/mnt/c/Users/Atuech Obosi/OneDrive/Desktop/software-development(Ayanda)/Chapter-13-Pagination-workthrough-/ball/lib/python3.8/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/mnt/c/Users/Atuech Obosi/OneDrive/Desktop/software-development(Ayanda)/CuisineGlobe/app/routes.py", line 84, in indian
+    return render_template('indian/indian.html', title='Indian Cuisine')
+  File "/mnt/c/Users/Atuech Obosi/OneDrive/Desktop/software-development(Ayanda)/Chapter-13-Pagination-workthrough-/ball/lib/python3.8/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "/mnt/c/Users/Atuech Obosi/OneDrive/Desktop/software-development(Ayanda)/Chapter-13-Pagination-workthrough-/ball/lib/python3.8/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+  File "/mnt/c/Users/Atuech Obosi/OneDrive/Desktop/software-development(Ayanda)/Chapter-13-Pagination-workthrough-/ball/lib/python3.8/site-packages/jinja2/environment.py", line 1304, in render
+    self.environment.handle_exception()
+  File "/mnt/c/Users/Atuech Obosi/OneDrive/Desktop/software-development(Ayanda)/Chapter-13-Pagination-workthrough-/ball/lib/python3.8/site-packages/jinja2/environment.py", line 939, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/mnt/c/Users/Atuech Obosi/OneDrive/Desktop/software-development(Ayanda)/CuisineGlobe/app/templates/indian/indian.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "/mnt/c/Users/Atuech Obosi/OneDrive/Desktop/software-development(Ayanda)/CuisineGlobe/app/templates/base.html", line 76, in top-level template code
+    {% block content %}
+  File "/mnt/c/Users/Atuech Obosi/OneDrive/Desktop/software-development(Ayanda)/CuisineGlobe/app/templates/indian/indian.html", line 7, in block 'content'
+    <a class="navbar-brand mx-auto" href=" {{ url_for('ind1.html') }} " style="font-weight: bolder; color: #FF9900;">
+  File "/mnt/c/Users/Atuech Obosi/OneDrive/Desktop/software-development(Ayanda)/Chapter-13-Pagination-workthrough-/ball/lib/python3.8/site-packages/flask/app.py", line 1084, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+  File "/mnt/c/Users/Atuech Obosi/OneDrive/Desktop/software-development(Ayanda)/Chapter-13-Pagination-workthrough-/ball/lib/python3.8/site-packages/flask/app.py", line 1073, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+  File "/mnt/c/Users/Atuech Obosi/OneDrive/Desktop/software-development(Ayanda)/Chapter-13-Pagination-workthrough-/ball/lib/python3.8/site-packages/werkzeug/routing/map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'ind1.html'. Did you mean 'ind1' instead?
+2024-11-09 11:04:14,673 INFO: Tinker Full-stack App [in /mnt/c/Users/Atuech Obosi/OneDrive/Desktop/software-development(Ayanda)/CuisineGlobe/app/__init__.py:63]
+2024-11-09 11:06:35,115 INFO: Tinker Full-stack App [in /mnt/c/Users/Atuech Obosi/OneDrive/Desktop/software-development(Ayanda)/CuisineGlobe/app/__init__.py:63]
+2024-11-09 11:08:29,955 ERROR: Exception on /ind1 [GET] [in /mnt/c/Users/Atuech Obosi/OneDrive/Desktop/software-development(Ayanda)/Chapter-13-Pagination-workthrough-/ball/lib/python3.8/site-packages/flask/app.py:838]
+Traceback (most recent call last):
+  File "/mnt/c/Users/Atuech Obosi/OneDrive/Desktop/software-development(Ayanda)/Chapter-13-Pagination-workthrough-/ball/lib/python3.8/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/mnt/c/Users/Atuech Obosi/OneDrive/Desktop/software-development(Ayanda)/Chapter-13-Pagination-workthrough-/ball/lib/python3.8/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/mnt/c/Users/Atuech Obosi/OneDrive/Desktop/software-development(Ayanda)/Chapter-13-Pagination-workthrough-/ball/lib/python3.8/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/mnt/c/Users/Atuech Obosi/OneDrive/Desktop/software-development(Ayanda)/Chapter-13-Pagination-workthrough-/ball/lib/python3.8/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/mnt/c/Users/Atuech Obosi/OneDrive/Desktop/software-development(Ayanda)/CuisineGlobe/app/routes.py", line 89, in ind1
+    return render_template('ind1.html')
+  File "/mnt/c/Users/Atuech Obosi/OneDrive/Desktop/software-development(Ayanda)/Chapter-13-Pagination-workthrough-/ball/lib/python3.8/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/mnt/c/Users/Atuech Obosi/OneDrive/Desktop/software-development(Ayanda)/Chapter-13-Pagination-workthrough-/ball/lib/python3.8/site-packages/jinja2/environment.py", line 1084, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/mnt/c/Users/Atuech Obosi/OneDrive/Desktop/software-development(Ayanda)/Chapter-13-Pagination-workthrough-/ball/lib/python3.8/site-packages/jinja2/environment.py", line 1013, in get_template
+    return self._load_template(name, globals)
+  File "/mnt/c/Users/Atuech Obosi/OneDrive/Desktop/software-development(Ayanda)/Chapter-13-Pagination-workthrough-/ball/lib/python3.8/site-packages/jinja2/environment.py", line 972, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/mnt/c/Users/Atuech Obosi/OneDrive/Desktop/software-development(Ayanda)/Chapter-13-Pagination-workthrough-/ball/lib/python3.8/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/mnt/c/Users/Atuech Obosi/OneDrive/Desktop/software-development(Ayanda)/Chapter-13-Pagination-workthrough-/ball/lib/python3.8/site-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+  File "/mnt/c/Users/Atuech Obosi/OneDrive/Desktop/software-development(Ayanda)/Chapter-13-Pagination-workthrough-/ball/lib/python3.8/site-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: ind1.html
+2024-11-09 11:09:18,286 INFO: Tinker Full-stack App [in /mnt/c/Users/Atuech Obosi/OneDrive/Desktop/software-development(Ayanda)/CuisineGlobe/app/__init__.py:63]
+2024-11-09 11:11:34,949 INFO: Tinker Full-stack App [in /mnt/c/Users/Atuech Obosi/OneDrive/Desktop/software-development(Ayanda)/CuisineGlobe/app/__init__.py:63]
+2024-11-16 10:09:01,313 INFO: Tinker Full-stack App [in /mnt/c/Users/Atuech Obosi/OneDrive/Desktop/software-development(Ayanda)/CuisineGlobe/app/__init__.py:63]
+2024-11-16 10:10:02,416 INFO: Tinker Full-stack App [in /mnt/c/Users/Atuech Obosi/OneDrive/Desktop/software-development(Ayanda)/CuisineGlobe/app/__init__.py:63]

@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="pic">
+    <h1 style="color: rgb(255, 255, 255); font-weight: 800;">EXPLORE MILLIONS OF <br> CUISINES AROUND <br>
+        THE GLOBE 
+    </h1>
+</div>
+    <div class="row text-center hero-button">
+        <div class="col-md-12" style="padding-top: 50px;">
+            <h3>Cuisine Globe celebrates the rich tapestry of flavors and culinary 
+                traditions from around the world.Interact with others to explore new 
+                cuisines. Embark on a culinary adventure with Cuisine Globe and
+                 savor the world’s diverse palette! 🌍
+            </h3>
+            <a href="{{ url_for('register') }}">
+                <button class="custom-orange-button" style="padding-bottom: 100px; font-size: 30px; color: white; font-weight: bolder;">GET STARTED</button>
+            </a>            
+        </div>
+    </div>
+
+{% endblock %}

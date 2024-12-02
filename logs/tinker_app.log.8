@@ -1,0 +1,80 @@
+2024-09-28 10:00:37,930 ERROR: Exception on /favicon.ico [GET] [in /mnt/c/Users/Atuech Obosi/OneDrive/Desktop/software-development(Ayanda)/Chapter-13-Pagination-workthrough-/ball/lib/python3.8/site-packages/flask/app.py:838]
+Traceback (most recent call last):
+  File "/mnt/c/Users/Atuech Obosi/OneDrive/Desktop/software-development(Ayanda)/Chapter-13-Pagination-workthrough-/ball/lib/python3.8/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/mnt/c/Users/Atuech Obosi/OneDrive/Desktop/software-development(Ayanda)/Chapter-13-Pagination-workthrough-/ball/lib/python3.8/site-packages/flask/app.py", line 854, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/mnt/c/Users/Atuech Obosi/OneDrive/Desktop/software-development(Ayanda)/Chapter-13-Pagination-workthrough-/ball/lib/python3.8/site-packages/flask/app.py", line 463, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+  File "/mnt/c/Users/Atuech Obosi/OneDrive/Desktop/software-development(Ayanda)/Chapter-13-Pagination-workthrough-/ball/lib/python3.8/site-packages/flask/ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "/mnt/c/Users/Atuech Obosi/OneDrive/Desktop/software-development(Ayanda)/Chapter-13-Pagination-workthrough-/ball/lib/python3.8/site-packages/werkzeug/routing/map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/c/Users/Atuech Obosi/OneDrive/Desktop/software-development(Ayanda)/Chapter-13-Pagination-workthrough-/ball/lib/python3.8/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/mnt/c/Users/Atuech Obosi/OneDrive/Desktop/software-development(Ayanda)/Chapter-13-Pagination-workthrough-/ball/lib/python3.8/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/mnt/c/Users/Atuech Obosi/OneDrive/Desktop/software-development(Ayanda)/Chapter-13-Pagination-workthrough-/ball/lib/python3.8/site-packages/flask/app.py", line 765, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/mnt/c/Users/Atuech Obosi/OneDrive/Desktop/software-development(Ayanda)/Chapter-13-Pagination-workthrough-/ball/lib/python3.8/site-packages/flask/app.py", line 740, in handle_http_exception
+    return self.ensure_sync(handler)(e)  # type: ignore[no-any-return]
+  File "/mnt/c/Users/Atuech Obosi/OneDrive/Desktop/software-development(Ayanda)/CuisineGlobe/app/errors.py", line 7, in not_found_error
+    return render_template('404.html', title='Page Not Found'), 404
+  File "/mnt/c/Users/Atuech Obosi/OneDrive/Desktop/software-development(Ayanda)/Chapter-13-Pagination-workthrough-/ball/lib/python3.8/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "/mnt/c/Users/Atuech Obosi/OneDrive/Desktop/software-development(Ayanda)/Chapter-13-Pagination-workthrough-/ball/lib/python3.8/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+  File "/mnt/c/Users/Atuech Obosi/OneDrive/Desktop/software-development(Ayanda)/Chapter-13-Pagination-workthrough-/ball/lib/python3.8/site-packages/jinja2/environment.py", line 1304, in render
+    self.environment.handle_exception()
+  File "/mnt/c/Users/Atuech Obosi/OneDrive/Desktop/software-development(Ayanda)/Chapter-13-Pagination-workthrough-/ball/lib/python3.8/site-packages/jinja2/environment.py", line 939, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/mnt/c/Users/Atuech Obosi/OneDrive/Desktop/software-development(Ayanda)/CuisineGlobe/app/templates/404.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/mnt/c/Users/Atuech Obosi/OneDrive/Desktop/software-development(Ayanda)/CuisineGlobe/app/templates/base.html", line 59, in top-level template code
+    <a class="nav-link" href="{{ url_for('profile') }}" style="color: #FF9900; font-weight: bolder;">PROILE</a>
+  File "/mnt/c/Users/Atuech Obosi/OneDrive/Desktop/software-development(Ayanda)/Chapter-13-Pagination-workthrough-/ball/lib/python3.8/site-packages/flask/app.py", line 1084, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+  File "/mnt/c/Users/Atuech Obosi/OneDrive/Desktop/software-development(Ayanda)/Chapter-13-Pagination-workthrough-/ball/lib/python3.8/site-packages/flask/app.py", line 1073, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+  File "/mnt/c/Users/Atuech Obosi/OneDrive/Desktop/software-development(Ayanda)/Chapter-13-Pagination-workthrough-/ball/lib/python3.8/site-packages/werkzeug/routing/map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'profile'. Did you forget to specify values ['username']?
+2024-09-28 10:05:09,088 INFO: Tinker Full-stack App [in /mnt/c/Users/Atuech Obosi/OneDrive/Desktop/software-development(Ayanda)/CuisineGlobe/app/__init__.py:63]
+2024-09-28 10:05:45,926 ERROR: Exception on /home [GET] [in /mnt/c/Users/Atuech Obosi/OneDrive/Desktop/software-development(Ayanda)/Chapter-13-Pagination-workthrough-/ball/lib/python3.8/site-packages/flask/app.py:838]
+Traceback (most recent call last):
+  File "/mnt/c/Users/Atuech Obosi/OneDrive/Desktop/software-development(Ayanda)/Chapter-13-Pagination-workthrough-/ball/lib/python3.8/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/mnt/c/Users/Atuech Obosi/OneDrive/Desktop/software-development(Ayanda)/Chapter-13-Pagination-workthrough-/ball/lib/python3.8/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/mnt/c/Users/Atuech Obosi/OneDrive/Desktop/software-development(Ayanda)/Chapter-13-Pagination-workthrough-/ball/lib/python3.8/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/mnt/c/Users/Atuech Obosi/OneDrive/Desktop/software-development(Ayanda)/Chapter-13-Pagination-workthrough-/ball/lib/python3.8/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/mnt/c/Users/Atuech Obosi/OneDrive/Desktop/software-development(Ayanda)/Chapter-13-Pagination-workthrough-/ball/lib/python3.8/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "/mnt/c/Users/Atuech Obosi/OneDrive/Desktop/software-development(Ayanda)/CuisineGlobe/app/routes.py", line 113, in index
+    return render_template(
+  File "/mnt/c/Users/Atuech Obosi/OneDrive/Desktop/software-development(Ayanda)/Chapter-13-Pagination-workthrough-/ball/lib/python3.8/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "/mnt/c/Users/Atuech Obosi/OneDrive/Desktop/software-development(Ayanda)/Chapter-13-Pagination-workthrough-/ball/lib/python3.8/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+  File "/mnt/c/Users/Atuech Obosi/OneDrive/Desktop/software-development(Ayanda)/Chapter-13-Pagination-workthrough-/ball/lib/python3.8/site-packages/jinja2/environment.py", line 1304, in render
+    self.environment.handle_exception()
+  File "/mnt/c/Users/Atuech Obosi/OneDrive/Desktop/software-development(Ayanda)/Chapter-13-Pagination-workthrough-/ball/lib/python3.8/site-packages/jinja2/environment.py", line 939, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/mnt/c/Users/Atuech Obosi/OneDrive/Desktop/software-development(Ayanda)/CuisineGlobe/app/templates/index.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "/mnt/c/Users/Atuech Obosi/OneDrive/Desktop/software-development(Ayanda)/CuisineGlobe/app/templates/base.html", line 59, in top-level template code
+    <a class="nav-link" href="{{ url_for('/<username>/profile') }}" style="color: #FF9900; font-weight: bolder;">PROILE</a>
+  File "/mnt/c/Users/Atuech Obosi/OneDrive/Desktop/software-development(Ayanda)/Chapter-13-Pagination-workthrough-/ball/lib/python3.8/site-packages/flask/app.py", line 1084, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+  File "/mnt/c/Users/Atuech Obosi/OneDrive/Desktop/software-development(Ayanda)/Chapter-13-Pagination-workthrough-/ball/lib/python3.8/site-packages/flask/app.py", line 1073, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+  File "/mnt/c/Users/Atuech Obosi/OneDrive/Desktop/software-development(Ayanda)/Chapter-13-Pagination-workthrough-/ball/lib/python3.8/site-packages/werkzeug/routing/map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint '/<username>/profile'. Did you mean 'profile' instead?
